@@ -4,34 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Su-35 Fighter Jet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Su-35 Fighter Jet</h1>
-    </header>
-    <main>
-        <section class="image-container">
-            <img src="media/Su-35.jpg" alt="Su-35 Jet">
-        </section>
-        <section class="description">
-            <h2>About the Su-35</h2>
-            <p>The Sukhoi Su-35 is a highly maneuverable, twin-engine, multirole fighter jet developed by Russia. It features advanced avionics, thrust-vectoring engines, and a powerful radar system.</p>
-        </section>
-        <section class="specs">
-            <h2>Specifications</h2>
-            <ul>
-                <li><strong>Max Speed:</strong> 2,400 km/h</li>
-                <li><strong>Range:</strong> 3,600 km</li>
-                <li><strong>Engines:</strong> 2 × Saturn AL-41F1S</li>
-                <li><strong>Thrust Vectoring:</strong> Yes</li>
-                <li><strong>Armament:</strong> Air-to-air and air-to-ground missiles, 30mm cannon</li>
+
+    <nav class="bg-gray-800 py-4 shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-6">
+            <h1 class="text-2xl font-bold text-blue-400">Su-35 Jet</h1>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-blue-400 font-semibold">Home</a></li>
+                <li><a href="gallery.html" class="hover:text-blue-400">Gallery</a></li>
+                <li><a href="about.html" class="hover:text-blue-400">About</a></li>
+                <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+                <li><a href="privacy.html" class="hover:text-blue-400">Privacy</a></li>
             </ul>
-        </section>
-        <section class="more-info">
-            <a href="more-info.html" class="btn">Learn More</a>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto mt-8 px-6 fade-in">
+        <section class="relative image-container">
+            <img src="media/Su-35.jpg" alt="Su-35 Jet" class="rounded-lg shadow-lg w-full object-cover">
         </section>
         
+        <section class="mt-8 text-center description">
+            <h2 class="text-3xl font-semibold text-blue-400">About the Su-35</h2>
+            <p class="mt-4 text-lg text-gray-300">
+                The Sukhoi Su-35 is a highly maneuverable, twin-engine, multirole fighter jet developed by Russia. 
+                It features advanced avionics, thrust-vectoring engines, and a powerful radar system.
+            </p>
+        </section>
+        
+        <section class="mt-8 text-center more-info">
+            <a href="more-info.html" class="btn">Learn More</a>
+        </section>
     </main>
+
+    <footer class="bg-gray-800 mt-10 py-4 text-center">
+        <p>&copy; 2025 Su-35 Jet | <a href="privacy.html" class="text-blue-400 hover:underline">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector(".fade-in").classList.add("show");
+        });
+    </script>
 </body>
 </html>
